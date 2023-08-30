@@ -22,6 +22,12 @@ $theme-colors: (
 
 .my-card {
     max-width: 1110px;
+    h1,h2 {
+        font-family: 'Inter', sans-serif;
+    }
+    p {
+        font-family: 'Lexend Deca', sans-serif; 
+    }
 }
 
 

@@ -7,27 +7,86 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Stats preview card component</title>
+  <!-- BOOTSTRAP CSS FILE -->
+  <link rel="stylesheet" href="./css/main.min.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 11px; text-align: center; margin-top: 2rem; color: white; }
+    .attribution a { color: hsl(199, 45%, 44%); }
   </style>
 </head>
 <body>
+  <main class="bg-mainBackground min-vh-100 d-flex justify-content-center align-items-center">
+    <div class="mx-3 mx-lg-0">
+      
+      <!-- CARD -->
+      <div class="my-card my-3 overflow-hidden mx-auto bg-cardBackground rounded row row-cols-1 row-cols-md-2 flex-row-reverse">
+        <!-- IMAGE -->
+        <div class="image p-0">
+          <img class="w-100 h-100 d-none d-md-block" src="./images/image-header-desktop.jpg" alt="image-header-desktop">
+          <img class="w-100 h-100 d-md-none" src="./images/image-header-mobile.jpg" alt="image-header-mobile">
+        </div>
+        <!-- DESC -->
+        <div class="desc p-0 d-flex justify-content-center align-items-center">
+          <!-- CONTENT -->
+          <div class="text-center text-md-start p-3 p-md-5">
 
-  Get insights that help your business grow.
+            <h1 class="text-statHeading fw-bold">
+              Get <span class="text-softViolet">insights</span> that help your business grow.
+            </h1>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+            <p class="text-mainParagraph">
+              Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+              experience, and overall efficiency.
+            </p>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+            <div class="d-md-flex gap-5 d-block">
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+              <div class="text-center">
+
+                <h2 class="text-statHeading fw-bold">
+                  10k+
+                </h2>
+
+                <p class="text-mainParagraph text-uppercase">companies</p>
+
+              </div>
+
+              <div class="text-center">
+
+                <h2 class="text-statHeading fw-bold">
+                  314
+                </h2>
+
+                <p class="text-mainParagraph text-uppercase">templates</p>
+
+              </div>
+
+              <div class="text-center">
+
+                <h2 class="text-statHeading fw-bold">
+                  12M+
+                </h2>
+
+                <p class="text-mainParagraph text-uppercase">queries</p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- END -->
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://ahmedSabbahMohamed.github.io/my-portfolio">Ahmed Sabbah</a>.
+      </div>
+    </div>
+  </main>
+
 </body>
 </html>
