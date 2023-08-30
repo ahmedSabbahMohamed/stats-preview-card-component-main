@@ -1,0 +1,30 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Outfit:wght@300;400;600&family=Rubik:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Outfit:wght@300;400;600&family=Rubik:wght@400;500;700&display=swap');
+
+
+// font-family: 'Inter', sans-serif;
+// font-family: 'Lexend Deca', sans-serif;
+
+// import functions and variables from bootstrap
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// add custom colors
+$theme-colors: (
+    "mainBackground": hsl(233, 47%, 7%),
+    "cardBackground": hsl(244, 38%, 16%),
+    "softViolet": hsl(277, 64%, 61%),
+    "white": hsl(0, 0%, 100%),
+    "mainParagraph": hsla(0, 0%, 100%, 0.75),
+    "statHeading": hsla(0, 0%, 100%, 0.6),
+);
+
+.my-card {
+    max-width: 1110px;
+}
+
+
+
+// import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
